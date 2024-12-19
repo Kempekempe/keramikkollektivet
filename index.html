@@ -3,9 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Keramikkollektivet</title>
+  <style>
+    /* För att ta bort standardmarginaler och göra hela sidan användbar */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    /* Bakgrundsbilden som täcker hela sidan */
+    .background-image {
+        background-image: url('./keramikkollektivet.jpg'); /* Byt ut med din bilds filnamn */
+        background-size: contain; /* Gör att bilden täcker hela sidan */
+        background-position: top; /* Centrerar bilden */
+        background-repeat: no-repeat; /* Förhindrar att bilden upprepas */
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        width: 100vw; /* Set the width to 100% of the viewport width */
+        height: 100%; /* Gör så att elementet täcker hela höjden */
+        width: 100%; /* Gör så att elementet täcker hela bredden */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
 </head>
 <body>
-  <p>&copy; 2024 Keramikkollektivet</p>
+  <div class="background-image"></div>
 </body>
 </html>
