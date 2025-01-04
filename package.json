@@ -1,5 +1,6 @@
 {
-  "name": "keramikkollektivet",
+  "name": "my-react-app",
+  "homepage": "https://www.keramikkollektivet.se",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
