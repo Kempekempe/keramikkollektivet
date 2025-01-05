@@ -22,7 +22,7 @@
   position: relative;
   padding-top: 56.25%; /* Maintain aspect ratio (16:9) of the image */
   background-position: center;
-  animation: fade 2s ease-in-out; /* Trigger the growing effect */
+  animation: fade 5s ease-in-out; /* Trigger the growing effect */
 }
 
 .hero__logo {
@@ -35,7 +35,6 @@
   height: auto; /* Maintain aspect ratio of the logo */
   z-index: 1; /* Ensure the logo appears above the image */
   animation: fade 2s ease-in-out; /* Trigger the growing effect */
-
 }
 
 /* 
