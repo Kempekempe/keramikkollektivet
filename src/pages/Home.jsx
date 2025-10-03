@@ -12,11 +12,11 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
+  const [heroImageLoaded, setHeroImageLoaded] = useState(false);
 
-  const [isLoaded, setIsLoaded] = useState(false);
-    useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  const handleHeroImageLoad = () => {
+    setHeroImageLoaded(true);
+  };
 
 
   const items = [
@@ -39,16 +39,28 @@ const Home = () => {
     <div className="home-page__wrapper">
       <div className='home-page__hero'>
         <img src={Logo} alt="Logo" className="home-page__hero-logo"></img>
-        <img className={`home-page__hero-image ${isLoaded ? 'home-page__hero-image--loaded' : ''}`} src={heroImage} alt="" loading='lazy' decoding='async' fetchPriority='high'
+        <img 
+          className={`home-page__hero-image ${heroImageLoaded ? 'home-page__hero-image--loaded' : ''}`} 
+          src={heroImage} 
+          alt="Keramikkollektivet hero image" 
+          onLoad={handleHeroImageLoad}
+          fetchPriority='high'
           srcSet={`${heroImage} 600w, ${heroImage} 1000w, ${heroImage} 2000w`} 
-          sizes="(max-width: 600px) 100vw, (max-width: 1000px) 100vw, 100vw"/>
+          sizes="(max-width: 600px) 100vw, (max-width: 1000px) 100vw, 100vw"
+        />
       </div>
 
       <div className="home-page__content">
         {/* make the card into a vertical card on small screens! also make the image responsive! */}
         <div className='home-page__card'>
           <div className='home-page__card-image-wrapper'>
-            <img className='home-page__card-image' src={cardImage} alt="" />
+            <img 
+              className='home-page__card-image' 
+              src={cardImage} 
+              alt="Keramikkollektivet studio image" 
+              loading="lazy"
+              decoding="async"
+            />
            </div>
           <div className='home-page__card-text'>
            <p className='home-page__card-para'>Keramikkollektivet är en liten förening och studio i Slottsstaden.

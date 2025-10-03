@@ -63,7 +63,7 @@
       border-radius: 20px;
       max-height: 37.5rem;
       opacity: 0;
-      transition: opacity 1s ease-in-out; /* Smoothly fade in the image */
+      transition: opacity 0.5s ease-in-out; /* Smoothly fade in the image */
 
       &--loaded {
         opacity: 1; /* Make the image visible once loaded */
