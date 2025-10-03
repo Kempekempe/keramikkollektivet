@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c4db418.css",
-    "main.js": "/static/js/main.481bc15d.js",
-    "static/media/hero-image.jpg": "/static/media/hero-image.38dc47247aa775b71850.jpg",
+    "main.css": "/static/css/main.429ff48c.css",
+    "main.js": "/static/js/main.5d6d95df.js",
+    "static/media/blommor.jpg": "/static/media/blommor.a076e8f9d28b6267b2f8.jpg",
+    "static/media/emmaz.jpg": "/static/media/emmaz.8f9fb2c40b810c5b228a.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/transparent-white.svg": "/static/media/transparent-white.46d3d15301f5b4dca2e51a193ed2c9ce.svg",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.4c4db418.css.map": "/static/css/main.4c4db418.css.map",
-    "main.481bc15d.js.map": "/static/js/main.481bc15d.js.map"
+    "main.429ff48c.css.map": "/static/css/main.429ff48c.css.map",
+    "main.5d6d95df.js.map": "/static/js/main.5d6d95df.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c4db418.css",
-    "static/js/main.481bc15d.js"
+    "static/css/main.429ff48c.css",
+    "static/js/main.5d6d95df.js"
   ]
 }
