@@ -1,7 +1,52 @@
+.header {
+  font-size: 0.875em;
+  font-family: 'Poppins', sans-serif; /* Use Google Fonts for a better font */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: white; /* Optional, for better visibility */
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional, for a shadow effect */
+  width: 100%;
+  // padding: 1rem 2.5rem 0 2.5rem; /* Add padding to the top and sides */
+}
+
+
 .navigation {
-  &__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black; /* Optional, for a bottom border */
+  padding: 2rem 2.5rem; /* Add padding to the top and sides */
+  //padding-block: 1rem;
+  // opacity: 0.9;
+
+  &__gif {
+    width: 4rem;
+  }
+
+  &__home {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+
+  &__list {
     display: flex;
-    gap: 1rem;
+    justify-content: end;
     list-style: none;
+
+    &-link {
+      padding-inline-start: 2.5rem;
+    }
+
+    &-link a {
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
   }
 }

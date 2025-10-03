@@ -11,6 +11,7 @@ import './styles/App.scss';
 const App = () => {
   return (
     <Router>
+      <div className="page-wrapper">
       <Header />
       <main>
         <Routes>
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      </div>
       <Footer />
     </Router>
   );

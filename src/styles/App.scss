@@ -1,17 +1,37 @@
-// import all styles here? use import or use?
-@use './_hero.scss' as *;         // Import base styles
-@use './_header.scss' as *;         // Import base styles
+@use './_hero.scss' as *;        
+@use './_header.scss' as *;         
+@use './_content.scss' as *;         
+@use './google-form.scss' as *;         
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // font-family: 'Roboto', sans-serif; /* Use Google Fonts for a better font */
+  // font-family: 'Poppins', sans-serif; /* Use Google Fonts for a better font */
+  // font-family: 'Montserrat', sans-serif; /* Use Google Fonts for a better font */
 }
 
-body {
+body, html {
   // padding: 2rem; /* Adjust as needed */
-  margin: 0; /* Remove default body margin */
-  box-sizing: border-box; /* Ensure padding and border are included in element's total width/height */
+  height: 100%;
+  width: 100%;
+}
+
+// Layout styles to prevent footer overlap
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5; /* Increase line height for better readability */
 }
 
 .App {
